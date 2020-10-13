@@ -1,0 +1,149 @@
+header {
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 50vw;
+    @include responcive {
+        background-image: none;
+        background: linear-gradient(180deg, #FFFFFF 48.96%, #E5E5E5 100%);
+    }
+}
+
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    @include responcive {
+        margin-bottom: 20px;
+        
+    }
+
+    .left_side {
+        width: 20%;
+        img {
+            width: 75px;
+            padding-left: 150px;
+            padding-top: 15px;
+            @include responcive {
+             
+            }
+        }
+    }
+    .right_side {
+        width: 80%;
+        padding-left: 40px;
+        // margin: 25px;
+        @include responcive {
+            display: none;
+        }
+        nav {
+            ul {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 20px;
+                margin-top: 10px ;
+                margin-left: 0;
+
+                li {
+                    list-style: none;
+                   
+
+                    a {
+                        text-decoration: none;
+                        padding: 20px 30px;
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: $nav;
+                    }
+                }
+            }
+        }
+    }
+}
+.button1 {
+    @include button;
+    
+}
+
+// navbar end
+
+// pprasideda apacia
+
+.bottom {
+    display: block;
+    justify-content: flex-start;
+    margin-right: 600px;
+    margin-top: 100px;
+    margin-left: 80px;
+    @include responcive {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 0px;
+        background: linear-gradient(180deg, #FFFFFF 48.96%, #E5E5E5 100%);
+       
+    }
+    h1 {
+        font-family: DM Serif Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 100%;
+        color: $textas;
+        @include responcive {
+            width: 100%;
+            font-size: 32px;
+            line-height: 100%;
+
+            text-align: center;
+        }
+    }
+    p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: $textas;
+        @include responcive {
+            width: 100%;
+            font-size: 14px;
+            line-height: 27px;
+            /* or 193% */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+    .button1 {
+        margin-bottom: 70px;
+        @include button;
+        @include responcive {
+            width: 100%;
+        }
+    }
+}
+
+.img_nav {
+    display: none;
+    @include responcive {
+        display: block;
+        width: 70px;
+       
+    
+        
+    }
+    .nav_img {
+
+        @include responcive {
+            transform: translate(-157px, 51px);
+        }
+    }
+}

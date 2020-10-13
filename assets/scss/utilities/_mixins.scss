@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500&display=swap");
+
+@mixin button {
+    background: #9b9bca;
+    border-radius: 10px;
+    width: 234px;
+    height: 60px;
+    color: #ffffff;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    border: 0;
+    opacity: 0.7;
+}
+
+@mixin responcive {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
